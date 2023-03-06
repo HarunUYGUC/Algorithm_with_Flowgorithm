@@ -1,5 +1,5 @@
-# Algorithm_with_Flowgorithm
-My Algorithm Studies with Flowgorithm App
+# Flowgorithm_ile_Algoritma
+Flowgorithm Uygulaması ile Algoritma Çalışmalarım
 
 - Yazılım dili öğrenmeden önce algoritma mantığının öğrenilmesi çok daha iyi bir şekilde yazılımı anlamanızı sağlayacaktır. Bu yüzden bu alanda yeni olanların 
 bu depo sayesinde bir şeyler öğrenebilmesini umuyorum.
