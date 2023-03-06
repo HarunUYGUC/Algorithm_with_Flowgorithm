@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="LENOVO"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-01-04 09:30:09 &#214;S"/>
+        <attribute name="created" value="TEVOT1ZPO0RFU0tUT1AtU0RQVFBRODsyMDIyLTAxLTA0OzA5OjIwOjIxIMOWUzsyOTkx"/>
+        <attribute name="edited" value="TEVOT1ZPO0RFU0tUT1AtU0RQVFBRODsyMDIyLTAxLTA0OzA5OjIwOjI0IMOWUzsxO0xFTk9WTztERVNLVE9QLVNEUFRQUTg7MjAyMi0wMS0wNDswOTowOToxMyDDllM7R2lyaWxlbiBTYXnEsWxhcmRhbiBLYcOnIFRhbmVzaW5pbiBOZWdhdGlmIC0gUG96aXRpZiBPbGR1xJ91bnUgWWF6bWFrLmZwcmc7MTMzODI="/>
+        <attribute name="edited" value="TEVOT1ZPO0RFU0tUT1AtU0RQVFBRODsyMDIyLTAxLTA0OzA5OjMwOjA5IMOWUzsyOzMxMDc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sayi, sayac, pozitifSayi, negatifSayi, s&#305;f&#305;rSayi, pozitifSayiTop, s&#305;f&#305;rSayiTop, negatifSayiTop" type="Integer" array="False" size=""/>
+            <assign variable="pozitifSayi" expression="0"/>
+            <assign variable="negatifSayi" expression="0"/>
+            <assign variable="s&#305;f&#305;rSayi" expression="0"/>
+            <assign variable="pozitifSayiTop" expression="0"/>
+            <assign variable="negatifSayiTop" expression="0"/>
+            <assign variable="s&#305;f&#305;rSayiTop" expression="0"/>
+            <output expression="&quot;Girmek &#304;stedi&#287;iniz 6 Tane Say&#305;y&#305; Giriniz&quot;" newline="True"/>
+            <for variable="sayac" start="1" end="6" direction="inc" step="1">
+                <output expression="sayac &amp; &quot;. Say&#305;y&#305; Giriniz!&quot;" newline="True"/>
+                <input variable="sayi"/>
+                <if expression="sayi &gt; 0">
+                    <then>
+                        <assign variable="pozitifSayi" expression="pozitifSayi + 1"/>
+                        <assign variable="pozitifSayiTop" expression="pozitifSayiTop + sayi"/>
+                    </then>
+                    <else>
+                        <if expression="sayi == 0">
+                            <then>
+                                <assign variable="s&#305;f&#305;rSayi" expression="s&#305;f&#305;rSayi + 1"/>
+                                <assign variable="s&#305;f&#305;rSayiTop" expression="s&#305;f&#305;rSayiTop + sayi"/>
+                            </then>
+                            <else>
+                                <assign variable="negatifSayi" expression="negatifSayi + 1"/>
+                                <assign variable="negatifSayiTop" expression="negatifSayiTop + sayi"/>
+                            </else>
+                        </if>
+                    </else>
+                </if>
+            </for>
+            <output expression="pozitifSayi &amp; &quot; tane Pozitif Say&#305; var ve toplamlar&#305; = &quot; &amp; pozitifSayiTop" newline="True"/>
+            <output expression="negatifSayi &amp; &quot; tane Negatif Say&#305; var ve toplamlar&#305; = &quot; &amp; negatifSayiTop" newline="True"/>
+            <output expression="s&#305;f&#305;rSayi &amp; &quot; tane S&#305;f&#305;r var ve toplamlar&#305; = &quot; &amp; s&#305;f&#305;rSayiTop" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

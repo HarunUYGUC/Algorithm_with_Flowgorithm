@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="LENOVO"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-01-18 06:46:03 &#214;S"/>
+        <attribute name="created" value="TEVOT1ZPO0RFU0tUT1AtU0RQVFBRODsyMDIyLTAxLTE4OzA2OjQyOjE5IMOWUzszMDA0"/>
+        <attribute name="edited" value="TEVOT1ZPO0RFU0tUT1AtU0RQVFBRODsyMDIyLTAxLTE4OzA2OjQ2OjAzIMOWUzsyOzMxMTA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, j" type="Integer" array="False" size=""/>
+            <output expression="&quot;EBOB'unu Bulmak &#304;stedi&#287;iniz &#304;ki Say&#305;y&#305; Giriniz!!&quot;" newline="True"/>
+            <output expression="&quot;1. Say&#305;y&#305; Giriniz!&quot;" newline="True"/>
+            <input variable="i"/>
+            <output expression="&quot;2. Say&#305;y&#305; Giriniz!&quot;" newline="True"/>
+            <input variable="j"/>
+            <while expression="i &lt;&gt; j">
+                <if expression="i &gt; j">
+                    <then>
+                        <assign variable="i" expression="i - j"/>
+                    </then>
+                    <else>
+                        <assign variable="j" expression="j - i"/>
+                    </else>
+                </if>
+            </while>
+            <output expression="&quot;Girdi&#287;iniz Say&#305;lar&#305;n EBOB'u= &quot; &amp; i" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

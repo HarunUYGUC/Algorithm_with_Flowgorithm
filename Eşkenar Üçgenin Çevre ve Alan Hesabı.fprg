@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="LENOVO"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-12-28 10:31:34 &#214;&#214;"/>
+        <attribute name="created" value="TEVOT1ZPO0RFU0tUT1AtU0RQVFBRODsyMDIxLTEyLTI4OzEwOjIwOjMyIMOWw5Y7MzEyMw=="/>
+        <attribute name="edited" value="TEVOT1ZPO0RFU0tUT1AtU0RQVFBRODsyMDIxLTEyLTI4OzEwOjMxOjM0IMOWw5Y7MTszMjM1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, h, cevre, alan" type="Real" array="False" size=""/>
+            <output expression="&quot;&#199;evresini ve Alan&#305;n&#305; Hesaplamak &#304;stedi&#287;iniz E&#351;kenar &#220;&#231;genin Bir Kenar&#305;n&#305; Yaz&#305;n&#305;z!&quot;" newline="True"/>
+            <input variable="a"/>
+            <output expression="&quot;Girdi&#287;iniz Kenar Uzunlu&#287;u: &quot; &amp; a" newline="True"/>
+            <assign variable="h" expression="(a^2 - ((a/2)^2))^(1/2)"/>
+            <output expression="&quot;Y&#252;kseklik de&#287;eri: &quot; &amp; h" newline="True"/>
+            <assign variable="cevre" expression="3*a"/>
+            <output expression="&quot;&#199;evre: &quot; &amp; cevre" newline="True"/>
+            <assign variable="alan" expression="a * h / 2"/>
+            <output expression="&quot;Alan: &quot; &amp; alan" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

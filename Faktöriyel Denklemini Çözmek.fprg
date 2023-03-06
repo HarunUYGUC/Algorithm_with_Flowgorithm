@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="LENOVO"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-01-28 10:15:32 &#214;S"/>
+        <attribute name="created" value="TEVOT1ZPO0RFU0tUT1AtU0RQVFBRODsyMDIyLTAxLTI4OzEwOjA4OjU3IMOWUzszMDA0"/>
+        <attribute name="edited" value="TEVOT1ZPO0RFU0tUT1AtU0RQVFBRODsyMDIyLTAxLTI4OzEwOjE1OjMyIMOWUzsyOzMxMDQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sayi, i, j, faktoriyel" type="Integer" array="False" size=""/>
+            <declare name="sonuc" type="Real" array="False" size=""/>
+            <assign variable="sonuc" expression="0"/>
+            <output expression="&quot;Say&#305;n&#305;z&#305; Giriniz!&quot;" newline="True"/>
+            <input variable="sayi"/>
+            <for variable="i" start="1" end="sayi" direction="inc" step="1">
+                <assign variable="faktoriyel" expression="1"/>
+                <for variable="j" start="1" end="i + 1" direction="inc" step="1">
+                    <assign variable="faktoriyel" expression="faktoriyel * j"/>
+                </for>
+                <assign variable="sonuc" expression="sonuc + i / faktoriyel"/>
+            </for>
+            <output expression="&quot;&#304;&#351;lemin Sonucu = &quot; &amp; sonuc" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

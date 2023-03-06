@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="LENOVO"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-01-27 01:23:50 &#214;S"/>
+        <attribute name="created" value="TEVOT1ZPO0RFU0tUT1AtU0RQVFBRODsyMDIyLTAxLTI3OzEyOjU4OjIyIMOWUzszMDAy"/>
+        <attribute name="edited" value="TEVOT1ZPO0RFU0tUT1AtU0RQVFBRODsyMDIyLTAxLTI3OzAxOjIzOjUwIMOWUzszOzMxMDM="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sayilar" type="Integer" array="True" size="10"/>
+            <declare name="i, hepsiTop, altUstTop, enBuyuk, enKucuk" type="Integer" array="False" size=""/>
+            <declare name="hepsiOrt, altUstOrt" type="Real" array="False" size=""/>
+            <assign variable="hepsiTop" expression="0"/>
+            <assign variable="altUstTop" expression="0"/>
+            <output expression="&quot;Girmek &#304;stedi&#287;iniz 10 Tane Say&#305;y&#305; Giriniz!&quot;" newline="True"/>
+            <for variable="i" start="0" end="9" direction="inc" step="1">
+                <output expression="i + 1 &amp; &quot;. Say&#305;y&#305; Giriniz!&quot;" newline="True"/>
+                <input variable="sayilar[i]"/>
+                <assign variable="hepsiTop" expression="hepsiTop + sayilar[i]"/>
+            </for>
+            <assign variable="enBuyuk" expression="sayilar[0]"/>
+            <assign variable="enKucuk" expression="sayilar[0]"/>
+            <for variable="i" start="1" end="9" direction="inc" step="1">
+                <if expression="sayilar[i] &gt; enBuyuk">
+                    <then>
+                        <assign variable="enBuyuk" expression="sayilar[i]"/>
+                    </then>
+                    <else/>
+                </if>
+                <if expression="sayilar[i] &lt; enKucuk">
+                    <then>
+                        <assign variable="enKucuk" expression="sayilar[i]"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <assign variable="hepsiOrt" expression="hepsiTop / 10"/>
+            <output expression="&quot;Hepsinin Ortalamas&#305; = &quot; &amp; hepsiOrt" newline="True"/>
+            <assign variable="altUstTop" expression="enKucuk + enBuyuk"/>
+            <assign variable="altUstOrt" expression="altUstTop / 2"/>
+            <output expression="&quot;En K&#252;&#231;&#252;k ve En B&#252;y&#252;k Say&#305;lar&#305;n Ortalamas&#305; = &quot; &amp; altUstOrt" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="LENOVO"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-01-29 11:48:02 &#214;&#214;"/>
+        <attribute name="created" value="TEVOT1ZPO0RFU0tUT1AtU0RQVFBRODsyMDIyLTAxLTI5OzExOjQwOjI5IMOWw5Y7MzEzMg=="/>
+        <attribute name="edited" value="TEVOT1ZPO0RFU0tUT1AtU0RQVFBRODsyMDIyLTAxLTI5OzExOjQ4OjAyIMOWw5Y7MjszMjQw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="x, i, t" type="Integer" array="False" size=""/>
+            <assign variable="t" expression="0"/>
+            <output expression="&quot;+1 +2 -3 +4 +5 -6 ..... +x'e kadar olan bu i&#351;lemi bulmak i&#231;in x say&#305;s&#305;n&#305; giriniz!&quot;" newline="True"/>
+            <input variable="x"/>
+            <for variable="i" start="1" end="x" direction="inc" step="1">
+                <if expression="i % 3 == 0">
+                    <then>
+                        <assign variable="t" expression="t - i"/>
+                    </then>
+                    <else>
+                        <assign variable="t" expression="t + i"/>
+                    </else>
+                </if>
+            </for>
+            <output expression="&quot;&#304;&#351;lemin Sonucu = &quot; &amp; t" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

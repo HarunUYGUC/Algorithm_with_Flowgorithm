@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="LENOVO"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-12-19 11:08:23 &#214;S"/>
+        <attribute name="created" value="TEVOT1ZPO0RFU0tUT1AtU0RQVFBRODsyMDIxLTEyLTE5OzExOjAwOjEwIMOWUzsyOTg3"/>
+        <attribute name="edited" value="TEVOT1ZPO0RFU0tUT1AtU0RQVFBRODsyMDIxLTEyLTE5OzExOjA4OjIzIMOWUzsxOzMxMDc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="r, cevre, alan" type="Real" array="False" size=""/>
+            <output expression="&quot;Yar&#305; &#199;ap&#305; Giriniz !!!!!!&quot;" newline="True"/>
+            <input variable="r"/>
+            <assign variable="cevre" expression="2 * 3.14 * r"/>
+            <assign variable="alan" expression="3.14 * r^2"/>
+            <output expression="&quot;&#199;evre: &quot; &amp; cevre" newline="True"/>
+            <output expression="&quot;Alan: &quot; &amp; alan" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

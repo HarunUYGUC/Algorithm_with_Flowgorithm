@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="LENOVO"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-01-22 04:56:49 &#214;S"/>
+        <attribute name="created" value="TEVOT1ZPO0RFU0tUT1AtU0RQVFBRODsyMDIyLTAxLTIyOzA0OjUxOjI1IMOWUzsyOTk0"/>
+        <attribute name="edited" value="TEVOT1ZPO0RFU0tUT1AtU0RQVFBRODsyMDIyLTAxLTIyOzA0OjU2OjQ5IMOWUzsyOzMxMTQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="gun" type="Integer" array="False" size=""/>
+            <declare name="gunler" type="String" array="True" size="7"/>
+            <assign variable="gunler[0]" expression="&quot;Pazartesi&quot;"/>
+            <assign variable="gunler[1]" expression="&quot;Sal&#305;&quot;"/>
+            <assign variable="gunler[2]" expression="&quot;&#199;ar&#351;amba&quot;"/>
+            <assign variable="gunler[3]" expression="&quot;Per&#351;embe&quot;"/>
+            <assign variable="gunler[4]" expression="&quot;Cuma&quot;"/>
+            <assign variable="gunler[5]" expression="&quot;Cumartesi&quot;"/>
+            <assign variable="gunler[6]" expression="&quot;Pazar&quot;"/>
+            <output expression="&quot;Hangi G&#252;n&#252; Ekrana Yazd&#305;rmak &#304;stersiniz? 0 Pazartesi i&#231;in ge&#231;erlidir.&quot;" newline="True"/>
+            <input variable="gun"/>
+            <output expression="gunler[gun]" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

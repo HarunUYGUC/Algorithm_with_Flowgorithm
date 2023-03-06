@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="LENOVO"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-01-25 11:36:38 &#214;&#214;"/>
+        <attribute name="created" value="TEVOT1ZPO0RFU0tUT1AtU0RQVFBRODsyMDIyLTAxLTI1OzExOjI5OjM0IMOWw5Y7MzEzMQ=="/>
+        <attribute name="edited" value="TEVOT1ZPO0RFU0tUT1AtU0RQVFBRODsyMDIyLTAxLTI1OzExOjM2OjM4IMOWw5Y7MzszMjQz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, adet" type="Integer" array="False" size=""/>
+            <output expression="&quot;1 - 40 Aras&#305; 3'e B&#246;l&#252;nen Say&#305;lar&#305; Ekrana Yazd&#305;ran Program!&quot;" newline="True"/>
+            <assign variable="adet" expression="0"/>
+            <output expression="&quot;Say&#305;n&#305;z 3'e Tam B&#246;l&#252;n&#252;yor = &quot;" newline="True"/>
+            <for variable="i" start="1" end="40" direction="inc" step="1">
+                <if expression="i % 3 == 0">
+                    <then>
+                        <output expression="i" newline="True"/>
+                        <assign variable="adet" expression="adet + 1"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <output expression="&quot;3'e Tam B&#246;l&#252;nen Say&#305;lar&#305;n Adeti = &quot; &amp; adet" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

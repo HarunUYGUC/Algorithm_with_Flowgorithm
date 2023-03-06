@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="LENOVO"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-01-23 05:15:40 &#214;S"/>
+        <attribute name="created" value="TEVOT1ZPO0RFU0tUT1AtU0RQVFBRODsyMDIyLTAxLTIzOzA1OjAyOjIyIMOWUzsyOTg5"/>
+        <attribute name="edited" value="TEVOT1ZPO0RFU0tUT1AtU0RQVFBRODsyMDIyLTAxLTIzOzA1OjE1OjQwIMOWUzsxOzMxMDE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, turkTop, matTop, genelOrt, turkOrt, matOrt" type="Real" array="False" size=""/>
+            <declare name="turkNot, matNot" type="Integer" array="True" size="2"/>
+            <assign variable="turkTop" expression="0"/>
+            <assign variable="matTop" expression="0"/>
+            <for variable="i" start="0" end="1" direction="inc" step="1">
+                <output expression="i + 1 &amp; &quot;. T&#252;rk&#231;e Notunuzu Giriniz!&quot;" newline="True"/>
+                <input variable="turkNot[i]"/>
+                <assign variable="turkTop" expression="turkTop + turkNot[i]"/>
+            </for>
+            <assign variable="turkOrt" expression="turkTop / 2"/>
+            <for variable="i" start="0" end="1" direction="inc" step="1">
+                <output expression="i + 1 &amp; &quot;. Matematik Notunuzu Giriniz!&quot;" newline="True"/>
+                <input variable="matNot[i]"/>
+                <assign variable="matTop" expression="matTop + matNot[i]"/>
+            </for>
+            <assign variable="matOrt" expression="matTop / 2"/>
+            <assign variable="genelOrt" expression="(turkOrt + matOrt) / 2"/>
+            <output expression="&quot;T&#252;rk&#231;e Not Ortalaman = &quot; &amp; turkOrt" newline="True"/>
+            <output expression="&quot;Matematik Not Ortlaman = &quot; &amp; matOrt" newline="True"/>
+            <output expression="&quot;Genel Ortalaman = &quot; &amp; genelOrt" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

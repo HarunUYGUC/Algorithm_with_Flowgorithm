@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="LENOVO"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-12-25 04:54:07 &#214;S"/>
+        <attribute name="created" value="TEVOT1ZPO0RFU0tUT1AtU0RQVFBRODsyMDIxLTEyLTI1OzA0OjA3OjAzIMOWUzsyOTk1"/>
+        <attribute name="edited" value="TEVOT1ZPO0RFU0tUT1AtU0RQVFBRODsyMDIxLTEyLTI1OzA0OjM4OjIyIMOWUzs0O0xFTk9WTztERVNLVE9QLVNEUFRQUTg7MjAyMS0xMi0yNTswNDowNzowMyDDllM7NjE2NQ=="/>
+        <attribute name="edited" value="TEVOT1ZPO0RFU0tUT1AtU0RQVFBRODsyMDIxLTEyLTI1OzA0OjU0OjA3IMOWUzsxMTszMTU4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="x1, x2, a, b, c, delta" type="Real" array="False" size=""/>
+            <output expression="&quot;ax^2 + bx + c = 0 denkemini istedi&#287;iniz say&#305;larla &#231;&#246;zmeyi deneyiniz.&quot;" newline="True"/>
+            <output expression="&quot;a de&#287;erini giriniz!&quot;" newline="True"/>
+            <input variable="a"/>
+            <output expression="&quot;b de&#287;erini giriniz!&quot;" newline="True"/>
+            <input variable="b"/>
+            <output expression="&quot;c de&#287;erini giriniz!&quot;" newline="True"/>
+            <input variable="c"/>
+            <assign variable="delta" expression="b^2 - 4*a*c"/>
+            <output expression="&quot;Delta de&#287;eri: &quot; &amp; delta" newline="True"/>
+            <if expression="delta &gt; 0">
+                <then>
+                    <output expression="&quot;Denklemin 2 farkl&#305; k&#246;k&#252; vard&#305;r!&quot;" newline="True"/>
+                    <assign variable="x1" expression="(-b + (delta^(1/2))) / (2*a)"/>
+                    <output expression="&quot;x1 de&#287;eri: &quot; &amp; x1" newline="True"/>
+                    <assign variable="x2" expression="(-b - (delta^(1/2))) / (2*a)"/>
+                    <output expression="&quot;x2 de&#287;eri: &quot; &amp; x2" newline="True"/>
+                </then>
+                <else>
+                    <if expression="delta == 0">
+                        <then>
+                            <output expression="&quot;Denklemin ayn&#305; 2 k&#246;k&#252; vard&#305;r!&quot;" newline="True"/>
+                            <assign variable="x1" expression="-b / (2*a)"/>
+                            <output expression="&quot;x1 de&#287;eri: &quot; &amp; x1" newline="True"/>
+                            <assign variable="x2" expression="-b / (2*a)"/>
+                            <output expression="&quot;x2 de&#287;eri: &quot; &amp; x2" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="delta &lt; 0">
+                                <then>
+                                    <output expression="&quot;Denklemin ger&#231;ek k&#246;k&#252; yoktur!&quot;" newline="True"/>
+                                </then>
+                                <else/>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

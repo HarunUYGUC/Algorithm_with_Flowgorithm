@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="LENOVO"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-01-29 12:53:05 &#214;S"/>
+        <attribute name="created" value="TEVOT1ZPO0RFU0tUT1AtU0RQVFBRODsyMDIyLTAxLTI5OzEyOjIwOjUxIMOWUzsyOTk1"/>
+        <attribute name="edited" value="TEVOT1ZPO0RFU0tUT1AtU0RQVFBRODsyMDIyLTAxLTI5OzEyOjUzOjA1IMOWUzsxNzszMTYz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sayi, i, j, bayrak" type="Integer" array="False" size=""/>
+            <assign variable="bayrak" expression="0"/>
+            <output expression="&quot;2 Tam Say&#305;n&#305;n Karesi &#350;eklinde Yaz&#305;l&#305;p Yaz&#305;lmad&#305;&#287;&#305;n&#305; Merak Etti&#287;iniz Say&#305;y&#305; Giriniz!&quot;" newline="True"/>
+            <input variable="sayi"/>
+            <for variable="i" start="1" end="sayi / 2" direction="inc" step="1">
+                <for variable="j" start="1" end="sayi / 2" direction="inc" step="1">
+                    <if expression="sayi == i^2 + j^2">
+                        <then>
+                            <output expression="sayi &amp; &quot; = &quot; &amp; i &amp; &quot; ve &quot; &amp; j &amp; &quot; Say&#305;lar&#305;n&#305;n Karelerinin Toplam&#305; Olarak Yaz&#305;labilir.&quot;" newline="True"/>
+                            <assign variable="bayrak" expression="1"/>
+                        </then>
+                        <else/>
+                    </if>
+                </for>
+            </for>
+            <if expression="bayrak == 0">
+                <then>
+                    <output expression="&quot;2 Tam Say&#305;n&#305;n Karesi &#350;eklinde Yaz&#305;lam&#305;yor!&quot;" newline="True"/>
+                </then>
+                <else/>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

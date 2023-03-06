@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="LENOVO"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-01-08 01:06:49 &#214;S"/>
+        <attribute name="created" value="TEVOT1ZPO0RFU0tUT1AtU0RQVFBRODsyMDIyLTAxLTA4OzAxOjAzOjI0IMOWUzsyOTkx"/>
+        <attribute name="edited" value="TEVOT1ZPO0RFU0tUT1AtU0RQVFBRODsyMDIyLTAxLTA4OzAxOjAzOjI5IMOWUzsxO0xFTk9WTztERVNLVE9QLVNEUFRQUTg7MjAyMi0wMS0wODsxMjo1NjoyMCDDllM7R2lyaWxlbiBTYXnEsW7EsW4gQXNhbCDDh2FycGFubGFyxLFuxLEgWWF6ZMSxcm1hIChXaGlsZSkuZnByZzsxMjQ3Mw=="/>
+        <attribute name="edited" value="TEVOT1ZPO0RFU0tUT1AtU0RQVFBRODsyMDIyLTAxLTA4OzAxOjA2OjQ5IMOWUzsxOzMxMDk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sayi, bolen, bolenToplam&#305;" type="Integer" array="False" size=""/>
+            <assign variable="bolenToplam&#305;" expression="0"/>
+            <output expression="&quot;Asal &#199;arpanlar&#305;n&#305; Bulmak &#304;stedi&#287;iniz Say&#305;y&#305; Giriniz!!&quot;" newline="True"/>
+            <input variable="sayi"/>
+            <assign variable="bolen" expression="2"/>
+            <while expression="sayi &gt; 1">
+                <if expression="sayi % bolen == 0">
+                    <then>
+                        <output expression="bolen" newline="True"/>
+                        <assign variable="sayi" expression="sayi / bolen"/>
+                        <assign variable="bolenToplam&#305;" expression="bolenToplam&#305; + bolen"/>
+                    </then>
+                    <else>
+                        <assign variable="bolen" expression="bolen + 1"/>
+                    </else>
+                </if>
+            </while>
+            <output expression="&quot;Asal &#199;arpanlar&#305;n&#305;n Toplam&#305;= &quot; &amp; bolenToplam&#305;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

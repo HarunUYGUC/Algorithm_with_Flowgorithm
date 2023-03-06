@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="LENOVO"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-01-28 09:36:28 &#214;S"/>
+        <attribute name="created" value="TEVOT1ZPO0RFU0tUT1AtU0RQVFBRODsyMDIyLTAxLTI4OzA5OjI3OjEyIMOWUzszMDA0"/>
+        <attribute name="edited" value="TEVOT1ZPO0RFU0tUT1AtU0RQVFBRODsyMDIyLTAxLTI4OzA5OjM2OjI4IMOWUzs2OzMxMjQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sayi, carpanTop, i" type="Integer" array="False" size=""/>
+            <assign variable="carpanTop" expression="0"/>
+            <output expression="&quot;Say&#305;n&#305;z&#305; Giriniz!&quot;" newline="True"/>
+            <input variable="sayi"/>
+            <output expression="&quot;Pozitif Tam B&#246;lenleri = &quot;" newline="True"/>
+            <for variable="i" start="1" end="sayi / 2" direction="inc" step="1">
+                <if expression="sayi % i == 0">
+                    <then>
+                        <output expression="i" newline="True"/>
+                        <assign variable="carpanTop" expression="carpanTop + i"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <output expression="sayi" newline="True"/>
+            <assign variable="carpanTop" expression="carpanTop + sayi"/>
+            <output expression="&quot;Pozitif Tam B&#246;lenlerin Toplam&#305; = &quot; &amp; carpanTop" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

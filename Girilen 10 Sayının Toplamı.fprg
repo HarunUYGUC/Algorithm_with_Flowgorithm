@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="LENOVO"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-12-25 09:12:52 &#214;S"/>
+        <attribute name="created" value="TEVOT1ZPO0RFU0tUT1AtU0RQVFBRODsyMDIxLTEyLTI1OzA5OjAzOjU4IMOWUzszMDA2"/>
+        <attribute name="edited" value="TEVOT1ZPO0RFU0tUT1AtU0RQVFBRODsyMDIxLTEyLTI1OzA5OjEyOjUyIMOWUzsxOzMxMDg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sayi, toplam, sayac" type="Integer" array="False" size=""/>
+            <assign variable="toplam" expression="0"/>
+            <output expression="&quot;Toplamak &#304;stedi&#287;iniz 10 Tane Say&#305;y&#305; Teker Teker Giriniz!&quot;" newline="True"/>
+            <for variable="sayac" start="1" end="10" direction="inc" step="1">
+                <output expression="sayac &amp; &quot;. Say&#305;y&#305; Giriniz: &quot;" newline="True"/>
+                <input variable="sayi"/>
+                <assign variable="toplam" expression="toplam + sayi"/>
+            </for>
+            <output expression="&quot;Yazd&#305;&#287;&#305;n&#305;z Say&#305;lar&#305;n Toplam&#305;: &quot; &amp; toplam" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

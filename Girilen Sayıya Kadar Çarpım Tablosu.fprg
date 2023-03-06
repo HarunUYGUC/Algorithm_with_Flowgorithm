@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="LENOVO"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-01-01 09:26:29 &#214;S"/>
+        <attribute name="created" value="TEVOT1ZPO0RFU0tUT1AtU0RQVFBRODsyMDIyLTAxLTAxOzA5OjE0OjU3IMOWUzszMDAw"/>
+        <attribute name="edited" value="TEVOT1ZPO0RFU0tUT1AtU0RQVFBRODsyMDIyLTAxLTAxOzA5OjI2OjI5IMOWUzsyOzMxMTE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, j, sayi" type="Integer" array="False" size=""/>
+            <output expression="&quot;Ka&#231;a Kadar Olan &#199;arp&#305;m Tablosunu G&#246;rmek &#304;stersin?&quot;" newline="True"/>
+            <input variable="sayi"/>
+            <for variable="i" start="1" end="sayi" direction="inc" step="1">
+                <for variable="j" start="1" end="10" direction="inc" step="1">
+                    <output expression="i &amp; &quot; x &quot; &amp; j &amp; &quot; = &quot; &amp; i * j" newline="True"/>
+                </for>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

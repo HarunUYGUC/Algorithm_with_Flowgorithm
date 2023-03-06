@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="LENOVO"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-01-22 05:49:30 &#214;S"/>
+        <attribute name="created" value="TEVOT1ZPO0RFU0tUT1AtU0RQVFBRODsyMDIyLTAxLTIyOzA1OjQzOjA5IMOWUzsyOTk4"/>
+        <attribute name="edited" value="TEVOT1ZPO0RFU0tUT1AtU0RQVFBRODsyMDIyLTAxLTIyOzA1OjQzOjEzIMOWUzsxO0xFTk9WTztERVNLVE9QLVNEUFRQUTg7MjAyMi0wMS0yMjswNTozNjoxMSDDllM7SGFmdGFuxLFuIEfDvG5sZXJpbmkgRWtyYW5hIFlhemTEsXJtYSAoRGl6aWxlcikuZnByZzsxMTMzMw=="/>
+        <attribute name="edited" value="TEVOT1ZPO0RFU0tUT1AtU0RQVFBRODsyMDIyLTAxLTIyOzA1OjQ5OjMwIMOWUzszOzMxMDg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="cevap" type="String" array="False" size=""/>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <declare name="gunler" type="String" array="True" size="7"/>
+            <output expression="&quot;Haftan&#305;n G&#252;nlerini Ekrana Yazmam&#305; &#304;ster Misiniz?  E / H &quot;" newline="True"/>
+            <input variable="cevap"/>
+            <if expression="cevap == &quot;E&quot;">
+                <then>
+                    <assign variable="gunler[0]" expression="&quot;Pazartesi&quot;"/>
+                    <assign variable="gunler[1]" expression="&quot;Sal&#305;&quot;"/>
+                    <assign variable="gunler[2]" expression="&quot;&#199;ar&#351;amba&quot;"/>
+                    <assign variable="gunler[3]" expression="&quot;Per&#351;embe&quot;"/>
+                    <assign variable="gunler[4]" expression="&quot;Cuma&quot;"/>
+                    <assign variable="gunler[5]" expression="&quot;Cumartesi&quot;"/>
+                    <assign variable="gunler[6]" expression="&quot;Pazar&quot;"/>
+                    <for variable="i" start="0" end="6" direction="inc" step="1">
+                        <output expression="gunler[i]" newline="True"/>
+                    </for>
+                </then>
+                <else>
+                    <output expression="&quot;Yazd&#305;rmam&#305; &#304;stemedi&#287;iniz &#304;&#231;in Yazmad&#305;m :'( &quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

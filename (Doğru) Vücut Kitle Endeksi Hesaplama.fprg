@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="LENOVO"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-12-21 05:21:56 &#214;S"/>
+        <attribute name="created" value="TEVOT1ZPO0RFU0tUT1AtU0RQVFBRODsyMDIxLTEyLTIxOzA1OjAwOjQ0IMOWUzsyOTkw"/>
+        <attribute name="edited" value="TEVOT1ZPO0RFU0tUT1AtU0RQVFBRODsyMDIxLTEyLTIxOzA1OjIxOjU2IMOWUzsyOzMxMDU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="ag&#305;rl&#305;k, boy, x" type="Real" array="False" size=""/>
+            <output expression="&quot;A&#287;&#305;rl&#305;&#287;&#305;n&#305;z&#305; 'Kilogram' Cinsinden Giriniz!!&quot;" newline="True"/>
+            <input variable="ag&#305;rl&#305;k"/>
+            <output expression="&quot;Boyunuzu 'Metre' Cinsinden Giriniz!!&quot;" newline="True"/>
+            <input variable="boy"/>
+            <assign variable="x" expression="ag&#305;rl&#305;k / boy^2"/>
+            <output expression="&quot;V&#252;cut Kitle Endeksin: &quot; &amp; x" newline="True"/>
+            <if expression="x &lt; 18.5">
+                <then>
+                    <output expression="&quot;Zay&#305;fs&#305;n&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="x &gt;= 18.5 &amp;&amp; x &lt; 25">
+                        <then>
+                            <output expression="&quot;Sa&#287;l&#305;kl&#305;s&#305;n :D&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="x &gt;= 25 &amp;&amp; x &lt; 30">
+                                <then>
+                                    <output expression="&quot;Fazla Kilolusun&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="x &gt;= 30 &amp;&amp; x &lt; 35">
+                                        <then>
+                                            <output expression="&quot;1. Dereceden Obezitesin :'(&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <if expression="x &gt;= 35 &amp;&amp; x &lt; 40">
+                                                <then>
+                                                    <output expression="&quot;2. Dereceden Obezitesin&quot;" newline="True"/>
+                                                </then>
+                                                <else>
+                                                    <if expression="x &gt;= 40">
+                                                        <then>
+                                                            <output expression="&quot;3. Dereceden Obezitesin :'( :'(&quot;" newline="True"/>
+                                                        </then>
+                                                        <else/>
+                                                    </if>
+                                                </else>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

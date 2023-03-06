@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="LENOVO"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-01-01 09:46:47 &#214;S"/>
+        <attribute name="created" value="TEVOT1ZPO0RFU0tUT1AtU0RQVFBRODsyMDIyLTAxLTAxOzA5OjM5OjM3IMOWUzszMDA1"/>
+        <attribute name="edited" value="TEVOT1ZPO0RFU0tUT1AtU0RQVFBRODsyMDIyLTAxLTAxOzA5OjQ2OjQ3IMOWUzsxOzMxMTI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sayi, sayac, faktoriyel" type="Integer" array="False" size=""/>
+            <assign variable="faktoriyel" expression="1"/>
+            <output expression="&quot;Fakt&#246;riyelini Hesaplamak &#304;stedi&#287;iniz Say&#305;y&#305; Giriniz : &quot;" newline="True"/>
+            <input variable="sayi"/>
+            <for variable="sayac" start="1" end="sayi" direction="inc" step="1">
+                <assign variable="faktoriyel" expression="faktoriyel * sayac"/>
+            </for>
+            <output expression="sayi &amp; &quot;!&quot; &amp; &quot; = &quot; &amp; faktoriyel" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="LENOVO"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-12-25 03:35:14 &#214;S"/>
+        <attribute name="created" value="TEVOT1ZPO0RFU0tUT1AtU0RQVFBRODsyMDIxLTEyLTI1OzAzOjIxOjM4IMOWUzsyOTk4"/>
+        <attribute name="edited" value="TEVOT1ZPO0RFU0tUT1AtU0RQVFBRODsyMDIxLTEyLTI1OzAzOjM1OjE0IMOWUzsyOzMxMDY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="vize, final, gec" type="Real" array="False" size=""/>
+            <output expression="&quot;Vize Notunuzu Giriniz!!&quot;" newline="True"/>
+            <input variable="vize"/>
+            <output expression="&quot;Final Notunuzu Giriniz!!&quot;" newline="True"/>
+            <input variable="final"/>
+            <assign variable="gec" expression="vize * 30 / 100 + final * 70 / 100"/>
+            <output expression="&quot;D&#246;nem Sonu Ortalaman&#305;z: &quot; &amp; gec" newline="True"/>
+            <if expression="gec &gt;= 50 &amp;&amp; final &gt;= 50">
+                <then>
+                    <output expression="&quot;S&#305;nf&#305; Ge&#231;tiniz, Tebrikler :D&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;S&#305;n&#305;fta Kald&#305;n&#305;z, &#220;zg&#252;n&#252;z :'( &quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

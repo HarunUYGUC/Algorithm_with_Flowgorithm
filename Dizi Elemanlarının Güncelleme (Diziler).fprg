@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="LENOVO"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-01-22 06:06:44 &#214;S"/>
+        <attribute name="created" value="TEVOT1ZPO0RFU0tUT1AtU0RQVFBRODsyMDIyLTAxLTIyOzA2OjAyOjA2IMOWUzsyOTkx"/>
+        <attribute name="edited" value="TEVOT1ZPO0RFU0tUT1AtU0RQVFBRODsyMDIyLTAxLTIyOzA2OjA2OjQ0IMOWUzsyOzMxMDY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <declare name="notlar" type="Integer" array="True" size="5"/>
+            <assign variable="notlar[0]" expression="80"/>
+            <assign variable="notlar[1]" expression="75"/>
+            <assign variable="notlar[2]" expression="53"/>
+            <assign variable="notlar[3]" expression="62"/>
+            <assign variable="notlar[4]" expression="43"/>
+            <for variable="i" start="0" end="4" direction="inc" step="1">
+                <assign variable="notlar[i]" expression="notlar[i] + 10"/>
+                <output expression="&quot; 10 Puan Eklenmi&#351; Haldeki Notunuz = &quot; &amp; notlar[i]" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

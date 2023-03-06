@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="LENOVO"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-12-25 03:13:56 &#214;S"/>
+        <attribute name="created" value="TEVOT1ZPO0RFU0tUT1AtU0RQVFBRODsyMDIxLTEyLTIxOzA0OjUzOjA1IMOWUzsyOTk0"/>
+        <attribute name="edited" value="TEVOT1ZPO0RFU0tUT1AtU0RQVFBRODsyMDIxLTEyLTI1OzAzOjEzOjU2IMOWUzsyOzMxMDg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="x, y" type="Real" array="False" size=""/>
+            <output expression="&quot;x De&#287;erini Giriniz!!&quot;" newline="True"/>
+            <input variable="x"/>
+            <if expression="x &lt; -1">
+                <then>
+                    <assign variable="y" expression="2*x + 2"/>
+                    <output expression="&quot;Hesaplanan De&#287;er: &quot; &amp; y" newline="True"/>
+                </then>
+                <else>
+                    <if expression="x &gt;= -1 &amp;&amp; x &lt; 3">
+                        <then>
+                            <assign variable="y" expression="x^2 - 1"/>
+                            <output expression="&quot;Hesaplanan De&#287;er: &quot; &amp; y" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="x &gt; 3">
+                                <then>
+                                    <assign variable="y" expression="-x^2 + 9"/>
+                                    <output expression="&quot;Hesaplanan De&#287;er: &quot; &amp; y" newline="True"/>
+                                </then>
+                                <else/>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

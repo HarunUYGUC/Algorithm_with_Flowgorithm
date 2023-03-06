@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="LENOVO"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-01-07 10:39:56 &#214;S"/>
+        <attribute name="created" value="TEVOT1ZPO0RFU0tUT1AtU0RQVFBRODsyMDIyLTAxLTA3OzEwOjM2OjU1IMOWUzszMDAw"/>
+        <attribute name="edited" value="TEVOT1ZPO0RFU0tUT1AtU0RQVFBRODsyMDIyLTAxLTA3OzEwOjM5OjU2IMOWUzsxOzMxMTI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sayac" type="Integer" array="False" size=""/>
+            <assign variable="sayac" expression="0"/>
+            <while expression="sayac &lt; 10">
+                <assign variable="sayac" expression="sayac + 1"/>
+                <output expression="sayac &amp; &quot;. Bravo!&quot;" newline="True"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

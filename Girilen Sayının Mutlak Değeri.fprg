@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="LENOVO"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-02-02 10:54:17 &#214;&#214;"/>
+        <attribute name="created" value="TEVOT1ZPO0RFU0tUT1AtU0RQVFBRODsyMDIyLTAyLTAyOzEwOjQ4OjQ4IMOWw5Y7MzEzMg=="/>
+        <attribute name="edited" value="TEVOT1ZPO0RFU0tUT1AtU0RQVFBRODsyMDIyLTAyLTAyOzEwOjU0OjE3IMOWw5Y7MjszMjM0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="x, A" type="Real" array="False" size=""/>
+            <output expression="&quot;Mutlak De&#287;erini Hesaplamak &#304;stedi&#287;iniz Say&#305;y&#305; Giriniz!&quot;" newline="True"/>
+            <input variable="x"/>
+            <if expression="x &lt; 0">
+                <then>
+                    <assign variable="A" expression="-x"/>
+                </then>
+                <else>
+                    <assign variable="A" expression="x"/>
+                </else>
+            </if>
+            <output expression="&quot;Mutlak De&#287;er = &quot; &amp; A" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

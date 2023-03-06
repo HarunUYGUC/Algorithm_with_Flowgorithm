@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="LENOVO"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-01-01 10:57:32 &#214;S"/>
+        <attribute name="created" value="TEVOT1ZPO0RFU0tUT1AtU0RQVFBRODsyMDIyLTAxLTAxOzEwOjQzOjMzIMOWUzsyOTg4"/>
+        <attribute name="edited" value="TEVOT1ZPO0RFU0tUT1AtU0RQVFBRODsyMDIyLTAxLTAxOzEwOjU3OjMyIMOWUzsxOzMxMDA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sayi" type="Integer" array="False" size=""/>
+            <output expression="&quot;Bir Say&#305; Giriniz!!&quot;" newline="True"/>
+            <input variable="sayi"/>
+            <if expression="sayi % 15 == 0">
+                <then>
+                    <output expression="&quot;Say&#305;n&#305;z 3'e ve 5'e tam b&#246;l&#252;n&#252;yor.&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Say&#305;n&#305;z 3'e ve 5'e ayn&#305; anda b&#246;l&#252;nemiyor.&quot;" newline="True"/>
+                    <if expression="sayi % 3 == 0">
+                        <then>
+                            <output expression="&quot;Say&#305;n&#305;z 3'e tam b&#246;l&#252;n&#252;yor.&quot;" newline="True"/>
+                            <output expression="&quot;Say&#305;n&#305;z 5'e b&#246;l&#252;nemiyor.&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Say&#305;n&#305;z 3'e b&#246;l&#252;nemiyor.&quot;" newline="True"/>
+                            <if expression="sayi % 5 == 0">
+                                <then>
+                                    <output expression="&quot;Say&#305;n&#305;z 5'e tam b&#246;l&#252;n&#252;yor.&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;Say&#305;n&#305;z 5'e b&#246;l&#252;nemiyor.&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

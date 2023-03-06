@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="LENOVO"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-01-29 11:29:32 &#214;&#214;"/>
+        <attribute name="created" value="TEVOT1ZPO0RFU0tUT1AtU0RQVFBRODsyMDIyLTAxLTI5OzExOjIxOjQ1IMOWw5Y7MzEyOQ=="/>
+        <attribute name="edited" value="TEVOT1ZPO0RFU0tUT1AtU0RQVFBRODsyMDIyLTAxLTI5OzExOjI4OjI1IMOWw5Y7MTtMRU5PVk87REVTS1RPUC1TRFBUUFE4OzIwMjItMDEtMjk7MTE6MTU6MTAgw5bDljtCdSBEZW5rbGVtaW4gU29udWN1bnUgVmVyZW4gUHJvZ3JhbSAow5ZkZXYpLmZwcmc7MTA5NDE="/>
+        <attribute name="edited" value="TEVOT1ZPO0RFU0tUT1AtU0RQVFBRODsyMDIyLTAxLTI5OzExOjI5OjMyIMOWw5Y7MjszMjQy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sayi, sonuc, ciftTop, tekTop, kacKere" type="Integer" array="False" size=""/>
+            <assign variable="tekTop" expression="0"/>
+            <assign variable="ciftTop" expression="0"/>
+            <output expression="&quot;+1 -2 +3 -4 +5 -6 ..... +girilen say&#305;&quot; &amp; &quot;'ya kadar olan i&#351;lemi yapmak i&#231;in say&#305;n&#305;z&#305; giriniz!&quot;" newline="True"/>
+            <input variable="sayi"/>
+            <if expression="sayi % 2 == 0">
+                <then>
+                    <assign variable="kacKere" expression="sayi / 2"/>
+                    <assign variable="ciftTop" expression="kacKere * -1"/>
+                </then>
+                <else>
+                    <assign variable="kacKere" expression="int(sayi / 2)"/>
+                    <assign variable="tekTop" expression="kacKere * -1 + sayi"/>
+                </else>
+            </if>
+            <assign variable="sonuc" expression="tekTop + ciftTop"/>
+            <output expression="&quot;&#304;&#351;lemin Sonucu = &quot; &amp; sonuc" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="LENOVO"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-01-23 04:33:24 &#214;S"/>
+        <attribute name="created" value="TEVOT1ZPO0RFU0tUT1AtU0RQVFBRODsyMDIyLTAxLTIzOzA0OjI4OjMyIMOWUzsyOTk3"/>
+        <attribute name="edited" value="TEVOT1ZPO0RFU0tUT1AtU0RQVFBRODsyMDIyLTAxLTIzOzA0OjMzOjI0IMOWUzsyOzMxMDM="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, enBuyuk" type="Integer" array="False" size=""/>
+            <declare name="sayilar" type="Integer" array="True" size="5"/>
+            <assign variable="sayilar[0]" expression="15"/>
+            <assign variable="sayilar[1]" expression="76"/>
+            <assign variable="sayilar[2]" expression="50"/>
+            <assign variable="sayilar[3]" expression="80"/>
+            <assign variable="sayilar[4]" expression="26"/>
+            <assign variable="enBuyuk" expression="sayilar[0]"/>
+            <for variable="i" start="1" end="4" direction="inc" step="1">
+                <if expression="sayilar[i] &gt; enBuyuk">
+                    <then>
+                        <assign variable="enBuyuk" expression="sayilar[i]"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <output expression="&quot;Bu Say&#305;lar Aras&#305;ndaki En B&#252;y&#252;k Say&#305; = &quot; &amp; enBuyuk" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

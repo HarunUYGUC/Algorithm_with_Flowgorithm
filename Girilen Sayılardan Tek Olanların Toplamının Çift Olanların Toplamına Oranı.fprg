@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="LENOVO"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-01-26 03:52:47 &#214;S"/>
+        <attribute name="created" value="TEVOT1ZPO0RFU0tUT1AtU0RQVFBRODsyMDIyLTAxLTI2OzAzOjM1OjE0IMOWUzsyOTk3"/>
+        <attribute name="edited" value="TEVOT1ZPO0RFU0tUT1AtU0RQVFBRODsyMDIyLTAxLTI2OzAzOjUyOjQ3IMOWUzs1OzMxMTQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="tekTop, ciftTop, i" type="Integer" array="False" size=""/>
+            <declare name="oran" type="Real" array="False" size=""/>
+            <declare name="sayilar" type="Integer" array="True" size="20"/>
+            <assign variable="ciftTop" expression="0"/>
+            <assign variable="tekTop" expression="0"/>
+            <for variable="i" start="0" end="19" direction="inc" step="1">
+                <output expression="&quot;Girmek &#304;stedi&#287;iniz 20 Tane Say&#305;y&#305; Giriniz!&quot;" newline="True"/>
+                <input variable="sayilar[i]"/>
+            </for>
+            <for variable="i" start="0" end="19" direction="inc" step="1">
+                <if expression="sayilar[i] % 2 == 0">
+                    <then>
+                        <assign variable="ciftTop" expression="ciftTop + sayilar[i]"/>
+                    </then>
+                    <else>
+                        <assign variable="tekTop" expression="tekTop + sayilar[i]"/>
+                    </else>
+                </if>
+            </for>
+            <assign variable="oran" expression="tekTop / ciftTop"/>
+            <output expression="&quot;Tek Say&#305;lar&#305;n Toplam&#305;n&#305;n &#199;ift Say&#305;lar&#305;n Toplam&#305;na Oran&#305; = &quot; &amp; oran" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

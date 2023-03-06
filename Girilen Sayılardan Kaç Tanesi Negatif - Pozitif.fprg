@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="LENOVO"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-01-04 09:37:00 &#214;S"/>
+        <attribute name="created" value="TEVOT1ZPO0RFU0tUT1AtU0RQVFBRODsyMDIyLTAxLTA0OzA5OjA5OjEzIMOWUzsyOTk5"/>
+        <attribute name="edited" value="TEVOT1ZPO0RFU0tUT1AtU0RQVFBRODsyMDIyLTAxLTA0OzA5OjM3OjAwIMOWUzs0OzMxMDc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sayi, sayac, pozitifSayi, negatifSayi, s&#305;f&#305;rSayi" type="Integer" array="False" size=""/>
+            <assign variable="pozitifSayi" expression="0"/>
+            <assign variable="negatifSayi" expression="0"/>
+            <assign variable="s&#305;f&#305;rSayi" expression="0"/>
+            <output expression="&quot;Girmek &#304;stedi&#287;iniz 6 Tane Say&#305;y&#305; Giriniz&quot;" newline="True"/>
+            <for variable="sayac" start="1" end="6" direction="inc" step="1">
+                <output expression="sayac &amp; &quot;. Say&#305;y&#305; Giriniz!&quot;" newline="True"/>
+                <input variable="sayi"/>
+                <if expression="sayi &gt; 0">
+                    <then>
+                        <assign variable="pozitifSayi" expression="pozitifSayi + 1"/>
+                    </then>
+                    <else>
+                        <if expression="sayi == 0">
+                            <then>
+                                <assign variable="s&#305;f&#305;rSayi" expression="s&#305;f&#305;rSayi + 1"/>
+                            </then>
+                            <else>
+                                <assign variable="negatifSayi" expression="negatifSayi + 1"/>
+                            </else>
+                        </if>
+                    </else>
+                </if>
+            </for>
+            <output expression="pozitifSayi &amp; &quot; tane Pozitif Say&#305; var. &quot; &amp; &quot; | &quot; &amp; s&#305;f&#305;rSayi &amp; &quot; tane S&#305;f&#305;r var. &quot; &amp; &quot; | &quot; &amp; negatifSayi &amp; &quot; tane Negatif Say&#305; var. &quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

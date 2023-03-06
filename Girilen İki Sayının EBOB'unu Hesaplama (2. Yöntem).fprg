@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="LENOVO"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-01-18 07:34:29 &#214;S"/>
+        <attribute name="created" value="TEVOT1ZPO0RFU0tUT1AtU0RQVFBRODsyMDIyLTAxLTE4OzA2OjQ5OjUwIMOWUzszMDA2"/>
+        <attribute name="edited" value="TEVOT1ZPO0RFU0tUT1AtU0RQVFBRODsyMDIyLTAxLTE4OzA3OjM0OjI5IMOWUzsyOzMxMTY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, j, bolen, bolenCarp&#305;m&#305;" type="Integer" array="False" size=""/>
+            <output expression="&quot;EBOB'unu Bulmak &#304;stedi&#287;iniz &#304;ki Say&#305;y&#305; Giriniz!!&quot;" newline="True"/>
+            <output expression="&quot;1. Say&#305;y&#305; Giriniz!&quot;" newline="True"/>
+            <input variable="i"/>
+            <output expression="&quot;2. Say&#305;y&#305; Giriniz!&quot;" newline="True"/>
+            <input variable="j"/>
+            <assign variable="bolen" expression="2"/>
+            <assign variable="bolenCarp&#305;m&#305;" expression="1"/>
+            <while expression="i &gt; 1 &amp;&amp; j &gt; 1">
+                <if expression="i % bolen == 0 &amp;&amp; j % bolen == 0">
+                    <then>
+                        <assign variable="i" expression="i / bolen"/>
+                        <assign variable="j" expression="j / bolen"/>
+                        <assign variable="bolenCarp&#305;m&#305;" expression="bolenCarp&#305;m&#305; * bolen"/>
+                    </then>
+                    <else>
+                        <if expression="i % bolen == 0">
+                            <then>
+                                <assign variable="i" expression="i / bolen"/>
+                            </then>
+                            <else/>
+                        </if>
+                        <if expression="j % bolen == 0">
+                            <then>
+                                <assign variable="j" expression="j / bolen"/>
+                            </then>
+                            <else/>
+                        </if>
+                        <if expression="i % bolen &lt;&gt; 0 &amp;&amp; j % bolen &lt;&gt; 0">
+                            <then>
+                                <assign variable="bolen" expression="bolen + 1"/>
+                            </then>
+                            <else/>
+                        </if>
+                    </else>
+                </if>
+            </while>
+            <output expression="&quot;Girdi&#287;iniz &#304;ki Say&#305;n&#305;n EBOB'u= &quot; &amp; bolenCarp&#305;m&#305;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

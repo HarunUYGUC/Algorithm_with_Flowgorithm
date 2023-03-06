@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="LENOVO"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-01-26 02:59:47 &#214;S"/>
+        <attribute name="created" value="TEVOT1ZPO0RFU0tUT1AtU0RQVFBRODsyMDIyLTAxLTI1OzExOjExOjA1IMOWw5Y7MzEyMA=="/>
+        <attribute name="edited" value="TEVOT1ZPO0RFU0tUT1AtU0RQVFBRODsyMDIyLTAxLTI2OzAyOjU5OjQ3IMOWUzs0OzMxMTk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sayi" type="Integer" array="False" size=""/>
+            <declare name="kuvvet" type="String" array="False" size=""/>
+            <output expression="&quot;5'in Kuvveti Olup Olmad&#305;&#287;&#305;n&#305;n Bulmak &#304;stedi&#287;iniz Say&#305;y&#305; Giriniz!&quot;" newline="True"/>
+            <input variable="sayi"/>
+            <assign variable="kuvvet" expression="&quot;&quot;"/>
+            <while expression="sayi &gt; 1">
+                <if expression="sayi % 5 == 0">
+                    <then>
+                        <assign variable="sayi" expression="sayi / 5"/>
+                        <assign variable="kuvvet" expression="5 &amp; &quot; * &quot; &amp; kuvvet"/>
+                    </then>
+                    <else>
+                        <assign variable="sayi" expression="0"/>
+                    </else>
+                </if>
+            </while>
+            <if expression="sayi == 0">
+                <then>
+                    <output expression="&quot;Say&#305;n&#305;z 5'in Kuvveti De&#287;ildir!&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Say&#305;n&#305;z 5'in Kuvvetidir = &quot; &amp; kuvvet" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

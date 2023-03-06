@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="LENOVO"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-01-22 05:38:45 &#214;S"/>
+        <attribute name="created" value="TEVOT1ZPO0RFU0tUT1AtU0RQVFBRODsyMDIyLTAxLTIyOzA1OjM2OjExIMOWUzsyOTkz"/>
+        <attribute name="edited" value="TEVOT1ZPO0RFU0tUT1AtU0RQVFBRODsyMDIyLTAxLTIyOzA1OjM3OjUyIMOWUzsxO0xFTk9WTztERVNLVE9QLVNEUFRQUTg7MjAyMi0wMS0yMjswNDo1MToyNSDDllM7R2lyaWxlbiBTYXnEsXlhIEfDtnJlIEfDvG4gQWTEsW7EsW4gWWF6ZMSxcm1hIChEaXppbGVyKS5mcHJnOzEyMjIz"/>
+        <attribute name="edited" value="TEVOT1ZPO0RFU0tUT1AtU0RQVFBRODsyMDIyLTAxLTIyOzA1OjM4OjQ1IMOWUzsyOzMxMTE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <declare name="gunler" type="String" array="True" size="7"/>
+            <assign variable="gunler[0]" expression="&quot;Pazartesi&quot;"/>
+            <assign variable="gunler[1]" expression="&quot;Sal&#305;&quot;"/>
+            <assign variable="gunler[2]" expression="&quot;&#199;ar&#351;amba&quot;"/>
+            <assign variable="gunler[3]" expression="&quot;Per&#351;embe&quot;"/>
+            <assign variable="gunler[4]" expression="&quot;Cuma&quot;"/>
+            <assign variable="gunler[5]" expression="&quot;Cumartesi&quot;"/>
+            <assign variable="gunler[6]" expression="&quot;Pazar&quot;"/>
+            <for variable="i" start="0" end="6" direction="inc" step="1">
+                <output expression="gunler[i]" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

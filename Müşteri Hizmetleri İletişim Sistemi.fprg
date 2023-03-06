@@ -1,0 +1,102 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="LENOVO"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-04-21 09:53:02 &#214;S"/>
+        <attribute name="created" value="TEVOT1ZPO0RFU0tUT1AtU0RQVFBRODsyMDIyLTA0LTIxOzA4OjQzOjI3IMOWUzszMDAz"/>
+        <attribute name="edited" value="TEVOT1ZPO0RFU0tUT1AtU0RQVFBRODsyMDIyLTA0LTIxOzA5OjUzOjAyIMOWUzszOzMxMDg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="giris, internet, yas" type="Integer" array="False" size=""/>
+            <declare name="onay, adSoyad" type="String" array="False" size=""/>
+            <declare name="fatura" type="Real" array="False" size=""/>
+            <output expression="&quot;Merhabalar! &#304;nternet paketi almak istiyorsan&#305;z 1'i, faturan&#305;z&#305; &#246;demek istiyorsan&#305;z 2'yi, m&#252;&#351;teri hizmetleriyle konu&#351;mak i&#231;in 3'e bas&#305;n&#305;z!&quot;" newline="True"/>
+            <input variable="giris"/>
+            <if expression="giris == 1">
+                <then>
+                    <output expression="&quot;7 Gb internet, 250 SMS, 300 dk konu&#351;ma sadece 30 TL; 10 Gb internet 150 SMS, 100 dk konu&#351;ma da sadece 30 Tl! &#304;lk paketi almak i&#231;in 1'i, 2. paketi almak i&#231;in ise 2'ye t&#305;klay&#305;n&#305;z.&quot;" newline="True"/>
+                    <input variable="internet"/>
+                    <if expression="internet == 2">
+                        <then>
+                            <output expression="&quot;10 Gb internet 150 SMS, 100 dk konu&#351;ma paketini 30 TL'ye kesin olarak onayl&#305;yor musunuz? E / H&quot;" newline="True"/>
+                            <input variable="onay"/>
+                            <if expression="onay == &quot;E&quot;">
+                                <then>
+                                    <output expression="&quot;&#304;nternet paketiniz hatt&#305;n&#305;za 30 TL'ye tan&#305;mlanm&#305;&#351;t&#305;r. Bizi tercih etti&#287;iniz i&#231;in te&#351;ekk&#252;r ederiz! :D&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <assign variable="onay" expression="&quot;&quot;"/>
+                                    <output expression="&quot;Yanl&#305;&#351;l&#305;kla bu pakete t&#305;klad&#305;&#287;&#305;n&#305;z&#305; d&#252;&#351;&#252;n&#252;yorum ve sizi di&#287;er internet paketine y&#246;nlendiriyorum.&quot;" newline="True"/>
+                                    <output expression="&quot;10 Gb internet 150 SMS, 100 dk konu&#351;ma paketini 30 TL'ye kesin olarak onayl&#305;yor musunuz? E / H&quot;" newline="True"/>
+                                    <input variable="onay"/>
+                                    <if expression="onay == &quot;E&quot;">
+                                        <then>
+                                            <output expression="&quot;&#304;nternet paketiniz hatt&#305;n&#305;za 30 TL'ye tan&#305;mlanm&#305;&#351;t&#305;r. Bizi tercih etti&#287;iniz i&#231;in te&#351;ekk&#252;r ederiz! :D&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <output expression="&quot;Beyfendi, size ba&#351;ka paket yok! Buray&#305; terk etmenizi rica ediyorum!!&quot;" newline="True"/>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <output expression="&quot;7 Gb internet, 250 SMS, 300 dk konu&#351;ma paketini 30 TL'ye kesin olarak onayl&#305;yor musunuz? E / H&quot;" newline="True"/>
+                            <input variable="onay"/>
+                            <if expression="onay == &quot;E&quot;">
+                                <then>
+                                    <output expression="&quot;&#304;nternet paketiniz hatt&#305;n&#305;za 30 TL'ye tan&#305;mlanm&#305;&#351;t&#305;r. Bizi tercih etti&#287;iniz i&#231;in te&#351;ekk&#252;r ederiz! :D&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <assign variable="onay" expression="&quot;&quot;"/>
+                                    <output expression="&quot;Yanl&#305;&#351;l&#305;kla bu pakete t&#305;klad&#305;&#287;&#305;n&#305;z&#305; d&#252;&#351;&#252;n&#252;yorum ve sizi di&#287;er internet paketine y&#246;nlendiriyorum.&quot;" newline="True"/>
+                                    <output expression="&quot;10 Gb internet 150 SMS, 100 dk konu&#351;ma paketini 30 TL'ye kesin olarak onayl&#305;yor musunuz? E / H&quot;" newline="True"/>
+                                    <input variable="onay"/>
+                                    <if expression="onay == &quot;E&quot;">
+                                        <then>
+                                            <output expression="&quot;&#304;nternet paketiniz hatt&#305;n&#305;za 30 TL'ye tan&#305;mlanm&#305;&#351;t&#305;r. Bizi tercih etti&#287;iniz i&#231;in te&#351;ekk&#252;r ederiz! :D&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <output expression="&quot;Beyfendi, size ba&#351;ka paket yok! Buray&#305; terk etmenizi rica ediyorum!!&quot;" newline="True"/>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <if expression="giris == 2">
+                        <then>
+                            <output expression="&quot;Ad&#305;n&#305;z&#305; ve soyad&#305;n&#305;z&#305;, ya&#351;&#305;n&#305;z&#305; ve Faturan&#305;z&#305;n ka&#231; TL oldu&#287;unu bilgilerinizi teyit etmemiz i&#231;in s&#246;yler misiniz?&quot;" newline="True"/>
+                            <output expression="&quot;Ad soyad bilginizi girer misiniz?&quot;" newline="True"/>
+                            <input variable="adSoyad"/>
+                            <output expression="&quot;Fatura tutar&#305;n&#305;z&#305; girer misiniz?&quot;" newline="True"/>
+                            <input variable="fatura"/>
+                            <output expression="&quot;Ya&#351;&#305;n&#305;z&#305; girer misiniz?&quot;" newline="True"/>
+                            <input variable="yas"/>
+                            <output expression="adSoyad &amp; &quot; kullan&#305;c&#305; adl&#305;, &quot; &amp; yas &amp; &quot; ya&#351;&#305;ndaki hesab&#305;n &quot; &amp; fatura &amp; &quot; TL &#246;denmemi&#351; borcu bulunmaktad&#305;r.&quot;" newline="True"/>
+                            <output expression="&quot;&#350;imdi &#246;demek ister misiniz? E / H&quot;" newline="True"/>
+                            <input variable="onay"/>
+                            <if expression="onay == &quot;E&quot;">
+                                <then>
+                                    <output expression="&quot;Faturan&#305;z &#214;DENM&#304;&#350;T&#304;R. &#304;yi g&#252;nler dileriz! :D&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;Faturan&#305;z &#214;DENMEM&#304;&#350;T&#304;R! Yak&#305;n zamanda &#246;demenizi rica ederiz!&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <output expression="&quot;M&#252;&#351;teri hizmetleri &#351;u anda me&#351;gul bulunamktad&#305;r! L&#252;tfen daha sonra tekrar deneyiniz!&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="LENOVO"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-01-28 09:25:43 &#214;S"/>
+        <attribute name="created" value="TEVOT1ZPO0RFU0tUT1AtU0RQVFBRODsyMDIyLTAxLTI4OzA5OjE2OjE5IMOWUzszMDA5"/>
+        <attribute name="edited" value="TEVOT1ZPO0RFU0tUT1AtU0RQVFBRODsyMDIyLTAxLTI4OzA5OjI1OjQzIMOWUzs1OzMxMTg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sayi, tekTop, tekCarp, ciftKareTop, i" type="Integer" array="False" size=""/>
+            <assign variable="tekTop" expression="0"/>
+            <assign variable="tekCarp" expression="1"/>
+            <assign variable="ciftKareTop" expression="0"/>
+            <output expression="&quot;Say&#305;n&#305;z&#305; Giriniz!&quot;" newline="True"/>
+            <input variable="sayi"/>
+            <for variable="i" start="1" end="sayi" direction="inc" step="1">
+                <if expression="i % 2 == 0">
+                    <then>
+                        <assign variable="ciftKareTop" expression="ciftKareTop + i^2"/>
+                    </then>
+                    <else>
+                        <assign variable="tekTop" expression="tekTop + i"/>
+                        <assign variable="tekCarp" expression="tekCarp * i"/>
+                    </else>
+                </if>
+            </for>
+            <output expression="&quot;1'den Girdi&#287;iniz Say&#305;ya Kadarki...&quot;" newline="True"/>
+            <output expression="&quot;...Tek Say&#305;lar&#305;n Toplam&#305; = &quot; &amp; tekTop" newline="True"/>
+            <output expression="&quot;...Tek Say&#305;lar&#305;n &#199;arpm&#305; = &quot; &amp; tekCarp" newline="True"/>
+            <output expression="&quot;...&#199;ift Say&#305;lar&#305;n Karelerinin Toplam&#305; = &quot; &amp; ciftKareTop" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

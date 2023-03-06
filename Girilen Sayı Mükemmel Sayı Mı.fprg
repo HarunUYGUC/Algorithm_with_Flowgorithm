@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="LENOVO"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-12-28 11:16:05 &#214;S"/>
+        <attribute name="created" value="TEVOT1ZPO0RFU0tUT1AtU0RQVFBRODsyMDIxLTEyLTI4OzExOjA2OjM4IMOWUzszMDAz"/>
+        <attribute name="edited" value="TEVOT1ZPO0RFU0tUT1AtU0RQVFBRODsyMDIxLTEyLTI4OzExOjE2OjA1IMOWUzsxOzMxMDY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sayi, sayac, carpanToplami" type="Integer" array="False" size=""/>
+            <assign variable="carpanToplami" expression="0"/>
+            <output expression="&quot;Say&#305;n&#305;z&#305;n M&#252;kemmel Say&#305; Olup Olmad&#305;&#287;&#305;n&#305; M&#305; Merak Ediyorsunuz? O Zaman Say&#305;n&#305; Hemen Programa Girmeyi Ne Dersin?&quot;" newline="True"/>
+            <input variable="sayi"/>
+            <for variable="sayac" start="1" end="sayi / 2" direction="inc" step="1">
+                <if expression="sayi % sayac == 0">
+                    <then>
+                        <assign variable="carpanToplami" expression="carpanToplami + sayac"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <if expression="carpanToplami == sayi">
+                <then>
+                    <output expression="&quot;Girdi&#287;iniz Say&#305; M&#252;kemmel Say&#305;d&#305;r!!&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Girdi&#287;iniz Say&#305; M&#252;kemmel Say&#305; De&#287;ildir!!&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

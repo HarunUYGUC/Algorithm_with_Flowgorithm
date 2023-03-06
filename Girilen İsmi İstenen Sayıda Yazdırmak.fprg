@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="LENOVO"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-01-09 11:44:07 &#214;S"/>
+        <attribute name="created" value="TEVOT1ZPO0RFU0tUT1AtU0RQVFBRODsyMDIyLTAxLTA5OzExOjQwOjM3IMOWUzsyOTk4"/>
+        <attribute name="edited" value="TEVOT1ZPO0RFU0tUT1AtU0RQVFBRODsyMDIyLTAxLTA5OzExOjQ0OjA3IMOWUzsxOzMxMDc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sayi, sayac" type="Integer" array="False" size=""/>
+            <declare name="isim" type="String" array="False" size=""/>
+            <output expression="&quot;Ka&#231; Defa 'Kendi &#304;smini' Yazd&#305;rmak &#304;stersin?&quot;" newline="True"/>
+            <input variable="sayi"/>
+            <output expression="&quot;&#304;sminizi Giriniz!&quot;" newline="True"/>
+            <input variable="isim"/>
+            <for variable="sayac" start="1" end="sayi" direction="inc" step="1">
+                <output expression="sayac &amp; &quot;. &quot; &amp; isim" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
